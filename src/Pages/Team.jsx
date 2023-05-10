@@ -1,5 +1,6 @@
+import BackToMainPage from './../components/UI/BackToMainPage';
+import BookBanner from './../components/UI/BookBanner';
 import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
 import Person1 from "../images/team/1.png";
 import Person2 from "../images/team/2.png";
 import Person3 from "../images/team/3.png";
@@ -19,7 +20,7 @@ function Team() {
   return (
     <>
       <section className="team-page">
-        <HeroPages name="Our Team" />
+        <BackToMainPage />
         <div className="cotnainer">
           <div className="team-container">
             {teamPpl.map((ppl, id) => (
@@ -35,18 +36,7 @@ function Team() {
             ))}
           </div>
         </div>
-        <div className="book-banner">
-          <div className="book-banner__overlay"></div>
-          <div className="container">
-            <div className="text-content">
-              <h2>Забронируйте автомобиль вместе с нами</h2>
-              <span>
-                <i className="fa-solid fa-phone"></i>
-                <h3>(888) 888-888</h3>
-              </span>
-            </div>
-          </div>
-        </div>
+        <BookBanner />
         <Footer />
       </section>
     </>

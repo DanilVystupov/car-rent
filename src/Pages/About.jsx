@@ -1,16 +1,17 @@
 import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
+import BackToMainPage from "../components/UI/BackToMainPage";
 import PlanTrip from "../components/PlanTrip";
 import AboutMain from "../images/about/about-main.jpg";
 import Box1 from "../images/about/icon1.png";
 import Box2 from "../images/about/icon2.png";
 import Box3 from "../images/about/icon3.png";
+import BookBanner from './../components/UI/BookBanner';
 
 function About() {
   return (
     <>
       <section className="about-page">
-        <HeroPages name="About" />
+        <BackToMainPage />
         <div className="container">
           <div className="about-main">
             <img
@@ -49,18 +50,7 @@ function About() {
           <PlanTrip />
         </div>
       </section>
-      <div className="book-banner">
-        <div className="book-banner__overlay"></div>
-        <div className="container">
-          <div className="text-content">
-            <h2>Забронируйте автомобиль вместе с нами</h2>
-            <span>
-              <i className="fa-solid fa-phone"></i>
-              <h3>(888) 888-888</h3>
-            </span>
-          </div>
-        </div>
-      </div>
+      <BookBanner />
       <Footer />
     </>
   );

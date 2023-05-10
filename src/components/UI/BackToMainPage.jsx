@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import { HOME } from '../../utils/consts';
 
-function HeroPages({ name }) {
+function BackToMainPage() {
 
-  const str = '<--';
+  const str = '<-';
 
   return (
     <>
@@ -10,9 +11,8 @@ function HeroPages({ name }) {
         <div className="hero-pages__overlay"></div>
         <div className="container">
           <div className="hero-pages__text">
-            <h3>{name}</h3>
             <p>
-              <Link to="/"> <span>{str}</span> Вернуться на главную</Link>
+              <Link to={HOME}> <span>{str}</span> Вернуться на главную</Link>
             </p>
           </div>
         </div>
@@ -21,4 +21,4 @@ function HeroPages({ name }) {
   );
 }
 
-export default HeroPages;
+export default BackToMainPage;

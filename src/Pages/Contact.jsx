@@ -1,11 +1,12 @@
 import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
+import BackToMainPage from "../components/UI/BackToMainPage";
+import BookBanner from "../components/UI/BookBanner";
 
 function Contact() {
   return (
     <>
       <section className="contact-page">
-        <HeroPages name="Contact" />
+        <BackToMainPage />
         <div className="container">
           <div className="contact-div">
             <div className="contact-div__text">
@@ -50,18 +51,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="book-banner">
-          <div className="book-banner__overlay"></div>
-          <div className="container">
-            <div className="text-content">
-              <h2>Забронируйте автомобиль вместе с нами</h2>
-              <span>
-                <i className="fa-solid fa-phone"></i>
-                <h3>(888) 888-888</h3>
-              </span>
-            </div>
-          </div>
-        </div>
+        <BookBanner />
         <Footer />
       </section>
     </>
