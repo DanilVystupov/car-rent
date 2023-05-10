@@ -1,0 +1,6 @@
+export const HOME = '/'
+export const ABOUT = '/about'
+export const MODELS = '/models'
+export const TESTIMONIALS = '/testimonials'
+export const TEAM = '/team'
+export const CONTACT = '/contact'

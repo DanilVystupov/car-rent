@@ -7,18 +7,19 @@ import Models from "./Pages/Models";
 import TestimonialsPage from "./Pages/TestimonialsPage";
 import Team from "./Pages/Team";
 import Contact from "./Pages/Contact";
+import { ABOUT, CONTACT, HOME, MODELS, TEAM, TESTIMONIALS } from "./utils/consts";
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="models" element={<Models />} />
-        <Route path="testimonials" element={<TestimonialsPage />} />
-        <Route path="team" element={<Team />} />
-        <Route path="contact" element={<Contact />} />
+        <Route index path={HOME} element={<Home />} />
+        <Route path={ABOUT} element={<About />} />
+        <Route path={MODELS} element={<Models />} />
+        <Route path={TESTIMONIALS} element={<TestimonialsPage />} />
+        <Route path={TEAM} element={<Team />} />
+        <Route path={CONTACT} element={<Contact />} />
       </Routes>
     </>
   );
