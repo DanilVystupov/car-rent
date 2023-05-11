@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../images/logo/logo.png";
 import { useState } from "react";
+import { ABOUT, CONTACT, HOME, MODELS, TEAM, TESTIMONIALS } from "../utils/consts";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -19,33 +20,33 @@ function Navbar() {
           </div>
           <ul className="mobile-navbar__links">
             <li>
-              <Link onClick={openNav} to="/">
+              <Link onClick={openNav} to={HOME}>
                 Главная
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/about">
+              <Link onClick={openNav} to={ABOUT}>
                 О нас
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/models">
+              <Link onClick={openNav} to={MODELS}>
                 Модели
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/testimonials">
-                Отзыав
+              <Link onClick={openNav} to={TESTIMONIALS}>
+                Отзывы
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/team">
+              <Link onClick={openNav} to={TEAM}>
                 Наша команда
               </Link>
             </li>
             <li>
-              <Link onClick={openNav} to="/contact">
-                Contact
+              <Link onClick={openNav} to={CONTACT}>
+                Контакты
               </Link>
             </li>
           </ul>
